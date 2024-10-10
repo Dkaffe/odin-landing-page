@@ -112,20 +112,23 @@ main {
     flex-direction: column;
     padding-left: 10%;
     padding-right: 10%; 
-    height: 480px; 
+    min-height: 480px; 
     align-items: center;
-    /* justify-content: center; */
+    justify-content: center;
     gap: 10px;
 }
 
 .info-section h2 {
     margin-top: 40px;
     font-size: 36px;
+    text-align: center;
 }
 
 .info-cards {
     display: flex;
+    flex-wrap: wrap;
     gap: 36px;
+    justify-content: center;
 }
 
 .info-card {
