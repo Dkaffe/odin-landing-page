@@ -148,3 +148,138 @@ main {
     border: 3px solid var(--button-color);
     border-radius: 15px;
 }
+
+.testimonial-section {
+    background-color: var(--hero-secondary);
+    padding-left: 20%;
+    padding-right: 20%;
+    min-height: 380px;
+    display: flex;
+    align-items: center;
+}
+
+.testimonial-quote {
+    display: flex;
+    flex-direction: column;
+}
+
+.quote {
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    align-self: center;
+    text-align: justify;
+    margin: 0;
+}
+
+.quote-author {
+    align-self: flex-end;
+    font-weight: bold;
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.cta-section {
+    display: flex;
+    padding-left: 15%;
+    padding-right: 15%;
+    align-items: center;
+    min-height: 380px;
+    
+}
+
+.cta {
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+    background-color: var(--button-color);
+    height: 120px;
+    border-radius: 12px;
+    padding: 8px;
+}
+
+.cta-text {
+    align-self: center;
+}
+
+.cta-text h3 {
+    color: var(--hero-text);
+    margin: 0;
+    font-size: 24px;
+}
+
+.cta-text p {
+    color: var(--hero-secondary);
+    margin: 0;
+    font-size: 18px;
+}
+
+.cta button {
+    align-self: center;
+    height: 35px;
+    width: 120px;
+    color: var(--hero-text);
+    background-color: var(--button-color);
+    border: 2px solid;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+footer {
+    background-color: var(--dark-background);
+    color: var(--hero-secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+}
+
+@media (width <= 426px) {
+    header {
+        display: none;
+    }
+
+    .hero-section {
+        padding-left: 5%;
+        padding-right: 5%;
+        height: 350px;
+    }
+
+    .hero-img {
+        display: none;
+    }
+
+    .info-section {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .info-cards {
+        padding: 20px
+    }
+
+    .testimonial-section {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .quote {
+        font-size: 28px;
+    }
+
+    .cta-section {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .cta-text {
+        padding-left: 10%;
+        padding-right: 10%
+    }
+
+    .cta {
+        flex-direction: column;
+        height: 180px
+    }
+  }
